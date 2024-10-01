@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb); /* Softer, elegant gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        .category {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 50px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between; /* Ensure even spacing */
+            flex-wrap: wrap;
+            gap: 20px; /* Add gap between items */
+            margin: 20px 0;
+        }
+
+        .service {
+            width: 220px; /* Fixed width to ensure uniformity */
+            text-align: center;
+            margin: 20px;
+        }
+
+        .service img {
+            width: 200px; /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensure images are properly cropped and fit in their box */
+            border-radius: 10px; /* Optional: Add rounded corners to the images */
+        }
+
+        /* Background styling for the header */
+        .header {
+            background: linear-gradient(to right, #ff758c, #ff7eb3); /* Improved gradient colors */
+            padding: 40px 0;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .service-button,
+        .home-button {
+            background-color: #ff758c; /* Better color for buttons */
+            color: white;
+            height: 50px;
+            width: 200px;
+            border-radius: 25px; /* Rounder button corners */
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .service-button:hover,
+        .home-button:hover {
+            background-color: #ff4d6d; /* Darker shade on hover */
+        }
+
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* Remove underline from links inside buttons */
+        .service-button a, 
+        .home-button a {
+            color: white;
+            text-decoration: none; /* Remove underline */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="home-button"><a href="home.html">HOME</a></button>
+    <div class="container">
+        <div class="header">
+            <h1>We Offer Best Services</h1>
+            <p class="category">CATEGORY</p>
+        </div>
+        <div class="services">
+            <div class="service">
+                <img src="community.jpg" alt="Community Outreach">
+                <button class="service-button"><a href="services-form.html">COMMUNITY OUTREACH</a></button>
+            </div>
+            <div class="service">
+                <img src="educationalwork.jpg" alt="Educational Workshops">
+                <button class="service-button"><a href="services-form.html">EDUCATIONAL WORKSHOPS</a></button>
+            </div>
+            <div class="service">
+                <img src="health.jpg" alt="Health and Wellness">
+                <button class="service-button"><a href="services-form.html">HEALTH AND WELLNESS</a></button>
+            </div>
+            <div class="service">
+                <img src="advocacy.jpg" alt="Advocacy">
+                <button class="service-button"><a href="services-form.html">ADVOCACY</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

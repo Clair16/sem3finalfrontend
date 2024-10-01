@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate For NGOs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(to bottom right, #ff9ff3, #00c9ff); /* Pink to blue gradient */
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .home-button {
+            background-color: #ff9ff3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 20px;
+            text-decoration: none;
+        }
+
+        .home-button:hover {
+            background-color: #ff6b81;
+        }
+
+        .header h4 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .ngo-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .ngo-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .ngo-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .ngo-card p {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .donate-button {
+            margin-top: 15px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .donate-button.teal { background-color: #00C9B7; }
+        .donate-button.orange { background-color: #FF9F43; }
+        .donate-button.red { background-color: #FF6B6B; }
+
+        .donate-button:hover {
+            opacity: 0.9;
+        }
+
+        /* Links inside buttons */
+        .donate-button a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="home-button" onclick="location.href='home.html'">HOME</button>
+    
+    <div class="container">
+        <div class="header">
+            <h4>All NGOs</h4>
+            <h1>Donate For NGOs</h1>
+        </div>
+
+        <div class="ngo-section">
+            <div class="ngo-card">
+                <img src="https://www.dailypioneer.com/uploads/2017/story/images/big/191286_1.jpg" alt="Children">
+                <p>CHILDREN</p>
+                <button class="donate-button teal"><a href="donate-form.html">Donate</a></button>
+            </div>
+
+            <div class="ngo-card">
+                <img src="oldngo.jpg" alt="Elderly">
+                <p>ELDERLY</p>
+                <button class="donate-button orange"><a href="donate-form.html">Donate</a></button>
+            </div>
+
+            <div class="ngo-card">
+                <img src="sickngo.jpg" alt="Sick">
+                <p>SICK</p>
+                <button class="donate-button red"><a href="donate-form.html">Donate</a></button>
+            </div>
+
+            <div class="ngo-card">
+                <img src="animals.jpg" alt="Animals">
+                <p>ANIMALS</p>
+                <button class="donate-button teal"><a href="donate-form.html">Donate</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
