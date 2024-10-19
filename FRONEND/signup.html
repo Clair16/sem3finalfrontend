@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up / Login</title>
+    <title>Sign Up</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        /* The same CSS from the original code */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -15,7 +16,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #ecb1c5, #B5FFFC); /* Soft gradient */
+            background: linear-gradient(135deg, #ecb1c5, #B5FFFC);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -108,7 +109,6 @@
 <body>
 
     <div class="form-container">
-        <!-- Sign Up Form -->
         <form id="signup-form" action="/signup" method="post">
             <h2>Sign Up</h2>
             
@@ -124,40 +124,11 @@
             <label for="signup-confirm-password">Confirm Password*</label>
             <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required>
 
-            <button type="submit"><a href ="registered.html"> Sign Up</a></button>
+            <button type="submit">Sign Up</button>
 
-            <p class="message">Already registered? <a href="#" onclick="showLogin()">Login</a></p>
-        </form>
-
-        <!-- Login Form -->
-        <form id="login-form" action="/login" method="post" style="display: none;">
-            <h2>Login</h2>
-            
-            <label for="login-username">Username*</label>
-            <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
-
-            <label for="login-password">Password*</label>
-            <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
-
-            <button type="submit"><a href="registered.html">Login</a></button>
-
-            <p class="message">Not registered yet? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+            <p class="message">Already registered? <a href="login.html">Login</a></p>
         </form>
     </div>
-
-    <script>
-        // Function to show the Login form and hide the Sign Up form
-        function showLogin() {
-            document.getElementById('signup-form').style.display = 'none';
-            document.getElementById('login-form').style.display = 'block';
-        }
-
-        // Function to show the Sign Up form and hide the Login form
-        function showSignUp() {
-            document.getElementById('login-form').style.display = 'none';
-            document.getElementById('signup-form').style.display = 'block';
-        }
-    </script>
 
 </body>
 </html>
